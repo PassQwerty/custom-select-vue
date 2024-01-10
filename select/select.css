@@ -42,6 +42,13 @@ ul li {
   color: var(--font_color);
 }
 
+.wrapperDropdown.active{
+  display: block !important;
+}
+.wrapperDropdown.no_active{
+  display: none;
+}
+
 .select {
   position: relative;
   width: var(--select_width);
