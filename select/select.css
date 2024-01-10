@@ -42,6 +42,18 @@ ul li {
   color: var(--font_color);
 }
 
+.wrapperValue{
+  display: flex;
+  height: 14px;
+  white-space: nowrap;
+  width: 96%;
+}
+
+.wrapperValue.buttonValue {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 .wrapperDropdown.active{
   display: block !important;
 }

@@ -3,8 +3,10 @@ export default {
       <div class="select">
          <!-- Кнопка для открытия выпадающего списка -->
          <button type="button" @click="openDropDown" class="selectToggle" :class="{active: isActiveDropdown}">
-            <span class="buttonValue">{{valueText}}</span>
-            <i class="fa fa-caret-down"></i>
+            <div class="wrapperValue">
+              <span class="buttonValue">{{valueText}}</span>
+            </div>  
+          <i class="fa fa-caret-down"></i>
          </button>
          <div class="wrapperDropdown" :class="{ active: isActiveDropdown, no_active: !isActiveDropdown }" id="wrapperDropdown">
             <!-- Поиск -->
